@@ -1,0 +1,36 @@
+Overview
+---
+1. Draw two boxes
+Randomize location of second box
+
+2. Create draw() function
+
+3. Move one box towards the other (runGame function())
+
+4. Only move the box when the space bar is pressed
+    Lesson: global variables
+
+5. In checkWinOrLose function (inside main loop)
+    Check for winning condition (collide)
+    Check for losing condition (box goes off screen)
+    Box.colliderect
+    Test each condition
+
+6. Repeated goes until the user hits
+    reset function called whenever the game ends
+    Reset box 1's position and the fired variable
+    Both must be global
+
+7. Physics
+    Copy / paste
+    ANGLE, POWER + GRAVITY at top
+    xv, yv, radangle in reset()
+    xv, yv in runGame() 
+    
+8. Change power and angle using the keyboard
+    Make POWER constant variable (change name to power)
+    Update reset() change POWER -> power
+    global power in checkEvents
+    when pressing up or down, change power
+
+9. Show power on screen
