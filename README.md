@@ -1,2 +1,2 @@
 # WorkExp-CompWorkshop
-This repository contains the example code and associated documentation for the Work Experience Computing Workshop.
+This repository contains the example and lesson code for the Work Experience Computing Workshop.
