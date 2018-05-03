@@ -16,11 +16,11 @@ TEXT = BASIC_FONT.render('Hello world!', True, WHITE, BLACK)
 while True:
     WINDOW_SURFACE.fill(BLACK)
 
-    textRect = TEXT.get_rect()
-    textRect.centerx = WINDOW_SURFACE.get_rect().centerx
-    textRect.centery = WINDOW_SURFACE.get_rect().centery
+    text_rect = TEXT.get_rect()
+    text_rect.centerx = WINDOW_SURFACE.get_rect().centerx
+    text_rect.centery = WINDOW_SURFACE.get_rect().centery
     # draw the text onto the surface
-    WINDOW_SURFACE.blit(TEXT, textRect)
+    WINDOW_SURFACE.blit(TEXT, text_rect)
 
     pygame.draw.circle(WINDOW_SURFACE, (255, 0, 0), (10, 20), 30)
     pygame.draw.line(WINDOW_SURFACE, (0, 0, 255), (200, 250), (225, 300))
