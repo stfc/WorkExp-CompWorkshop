@@ -1,6 +1,5 @@
 import sys
 import pygame
-from pygame.locals import *
 
 pygame.init()
 
@@ -29,6 +28,6 @@ while True:
     pygame.display.update()
     for event in pygame.event.get():
         # Check to see if the "Close" button has been pressed
-        if event.type == QUIT:
+        if event.type == pygame.QUIT:
             pygame.quit()
             sys.exit(1)
