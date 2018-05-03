@@ -9,22 +9,22 @@ WHITE = (255, 255, 255)
 WINDOWWIDTH = 400
 WINDOWHEIGHT = 300
 
-windowSurface = pygame.display.set_mode((WINDOWWIDTH, WINDOWHEIGHT), 0, 32)
-basicFont = pygame.font.SysFont(None, 48)
-text = basicFont.render('Hello world!', True, WHITE, BLACK)
+WINDOW_SURFACE = pygame.display.set_mode((WINDOWWIDTH, WINDOWHEIGHT), 0, 32)
+BASIC_FONT = pygame.font.SysFont(None, 48)
+TEXT = BASIC_FONT.render('Hello world!', True, WHITE, BLACK)
 
 while True:
-    windowSurface.fill(BLACK)
+    WINDOW_SURFACE.fill(BLACK)
 
-    textRect = text.get_rect()
-    textRect.centerx = windowSurface.get_rect().centerx
-    textRect.centery = windowSurface.get_rect().centery
+    textRect = TEXT.get_rect()
+    textRect.centerx = WINDOW_SURFACE.get_rect().centerx
+    textRect.centery = WINDOW_SURFACE.get_rect().centery
     # draw the text onto the surface
-    windowSurface.blit(text, textRect)
+    WINDOW_SURFACE.blit(TEXT, textRect)
 
-    pygame.draw.circle(windowSurface, (255,0,0), (10, 20), 30)
-    pygame.draw.line(windowSurface, (0,0,255), (200, 250), (225, 300))
-    pygame.draw.rect(windowSurface, (0,255,0), (150,50,100,50))
+    pygame.draw.circle(WINDOW_SURFACE, (255,0,0), (10, 20), 30)
+    pygame.draw.line(WINDOW_SURFACE, (0,0,255), (200, 250), (225, 300))
+    pygame.draw.rect(WINDOW_SURFACE, (0,255,0), (150,50,100,50))
 
     pygame.display.update()
     for event in pygame.event.get():
