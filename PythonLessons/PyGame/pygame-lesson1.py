@@ -25,7 +25,7 @@ while True:
     text_rect = TEXT.get_rect()
     text_rect.centerx = WINDOW_SURFACE.get_rect().centerx
     text_rect.centery = WINDOW_SURFACE.get_rect().centery
-    # draw the text onto the surface
+    # Draw the text onto the surface
     WINDOW_SURFACE.blit(TEXT, text_rect)
 
     # Draw a circle, line and rectangle just to show how
