@@ -1,3 +1,5 @@
+"""This file contains a simple 'Hello World' style program for PyGame."""
+
 import sys
 import pygame
 
