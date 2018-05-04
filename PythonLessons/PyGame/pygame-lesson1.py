@@ -8,7 +8,7 @@ WHITE = (255, 255, 255)
 WINDOWWIDTH = 400
 WINDOWHEIGHT = 300
 
-WINDOW_SURFACE = pygame.display.set_mode((WINDOWWIDTH, WINDOWHEIGHT), 0, 32)
+WINDOW_SURFACE = pygame.display.set_mode((WINDOWWIDTH, WINDOWHEIGHT))
 BASIC_FONT = pygame.font.SysFont(None, 48)
 TEXT = BASIC_FONT.render('Hello world!', True, WHITE, BLACK)
 
