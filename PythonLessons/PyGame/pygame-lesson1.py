@@ -43,4 +43,4 @@ while True:
         # Check to see if the "Close" button has been pressed
         if event.type == pygame.QUIT:
             pygame.quit()
-            sys.exit(1)
+            sys.exit(0)
