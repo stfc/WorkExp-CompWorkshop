@@ -6,7 +6,7 @@ This work is intended for educational purposes.
 
 # Invent Your Own Computer Games with Python 3rd Edition
 
-This work is based on the book “Invent Your Own Computer Games with Python 3rd Edition” by Al Sweigart (ISBN-10 0982106017), and is licensed under Creative Commons Attribution-Noncommercial-Share Alike 3.0 United States License.
+This work is based on the book “Invent Your Own Computer Games with Python 3rd Edition” by Al Sweigart (ISBN-10 0982106017) which is licensed under a Creative Commons Attribution-Noncommercial-Share Alike 3.0 United States License.
 
 There is a human-readable summary of the Legal Code (the full license), located here: http://creativecommons.org/licenses/by-nc-sa/3.0/us/legalcode
 
