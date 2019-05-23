@@ -19,7 +19,15 @@ WINDOW_SURFACE = pygame.display.set_mode((WINDOWWIDTH, WINDOWHEIGHT))
 BASIC_FONT = pygame.font.SysFont(None, 48)
 TEXT = BASIC_FONT.render('Hello world!', True, WHITE, BLACK)
 
+
 while True:
+    # Check for user input
+    for event in pygame.event.get():
+        # Check to see if the "Close" button has been pressed
+        if event.type == pygame.QUIT:
+            pygame.quit()
+            sys.exit(0)
+
     # Fill the screen to prevent any moving shapes leaving a 'trail'
     WINDOW_SURFACE.fill(BLACK)
 
@@ -37,10 +45,3 @@ while True:
 
     # Update the screen
     pygame.display.update()
-
-    # Check for user input
-    for event in pygame.event.get():
-        # Check to see if the "Close" button has been pressed
-        if event.type == pygame.QUIT:
-            pygame.quit()
-            sys.exit(0)
