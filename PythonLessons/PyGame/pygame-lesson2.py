@@ -58,35 +58,35 @@ while True:
             pygame.quit()
             sys.exit()
 
-# clear the surface by filling with black
+    # clear the surface by filling with black
     windowSurface.fill(BLACK)
 
-# check if the first rectangle is off screen?  If it is,
-# change the direction it moves in
+    # check if the first rectangle is off screen?  If it is,
+    # change the direction it moves in
     if (rectangle.right > WINDOWWIDTH):
         move = - move
     elif (rectangle.left <= 0):
         move = -move
 
-# check if rectangle2 is off screen? If it is, change the direction it
-# moves in
+    # check if rectangle2 is off screen? If it is, change the direction it
+    # moves in
 
     if (rectangle2.right > WINDOWWIDTH):
         move2 = - move2
     elif (rectangle2.left <= 0):
         move2 = -move2
 
-# do rectangle and rectangle2 overlap?  If they do, change the direction they
-#  move in
+    # do rectangle and rectangle2 overlap?  If they do, change the direction they
+    #  move in
     if ((rectangle2.left > rectangle.left) and (rectangle2.left < rectangle.right )) or ((rectangle2.right > rectangle.left) and (rectangle2.right < rectangle.right)):
         move = -move
         move2 = -move2
 
-# alter position of the rectangles - i.e. make them move
+    # alter position of the rectangles - i.e. make them move
     topx = rectangle.left + move
     topx2 = rectangle2.left + move2
 
-# redraw rectangles
+    # redraw rectangles
     rectangle = pygame.draw.rect(windowSurface, RED, (topx, 50, 100, 50))
     rectangle2 = pygame.draw.rect(windowSurface, GREEN, (topx2, 50, 50, 50))
 
